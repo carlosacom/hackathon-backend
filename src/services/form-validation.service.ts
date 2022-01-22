@@ -1,5 +1,5 @@
-
 import { niceNames, extendMessages, Validator, addCustomMessages } from 'node-input-validator';
+
 class FormValidation {
     constructor() {
         extendMessages({
@@ -15,9 +15,7 @@ class FormValidation {
             name: 'Nombre',
             surname: 'Apellidos',
         });
-
     }
-
     async validateForm(body: any, validation: any) {
         const validate = new Validator(body, validation);
         return {
